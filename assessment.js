@@ -5,7 +5,7 @@
  * Assign the keys the appropriate values.
  */
 
-// CODE HERE
+var me = {firstname : "Vinita" ,age : 42, state: "Ohio"};
 
 /**
  * #2
@@ -14,7 +14,8 @@
  * The new key should be 'faveColor'. Set it to your favorite color as a string.
  */
 
-// CODE HERE
+var me = {firstname : "Vinita" ,age : 42, state: "Ohio"};
+me.favColor = "Blue";
 
 /**
  * #3
@@ -29,7 +30,7 @@ var message = {
   userName: me.firstname
 };
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+message.text = ["Hi there!Are you home?"];
 
 /**
  * #4
@@ -39,7 +40,14 @@ var message = {
  * downVote() should take in a number, subtract one from it, and return the number.
  */
 
-// CODE HERE
+var adjustCount = {
+  upvote: function (num){
+  return  num + 1;
+  },
+  downvote: function (num){
+  return  num - 1;
+}
+}
 
 /**
  * #5
@@ -47,7 +55,7 @@ var message = {
  * Create an array called 'myFriends' with four of your friends names.
  */
 
-// CODE HERE
+var myFriends = ["Shweta", "Pooja", "Priya", "Sujata"];
 
 /**
  * #6
@@ -55,7 +63,7 @@ var message = {
  * Add a fifth friends name to the end of your 'myFriends' array.
  */
 
-// CODE HERE
+var myFriends = myFriends.concat("Ushma");
 
 /**
  * #7
@@ -67,7 +75,7 @@ var message = {
 // DON'T TOUCH THE CODE BELOW
 var myArray = [1, 2, 3, 4];
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+var myArrayCopy = Object.assign(myArray);
 
 /**
  * #8
@@ -80,7 +88,7 @@ var myArray = [1, 2, 3, 4];
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
 function evensOnly() {
-  // CODE HERE
+  return myNumbers.filter();
 }
 
 /**
@@ -90,7 +98,9 @@ function evensOnly() {
  * Assign it to a variable called 'trueFriends'.
  */
 
-// CODE HERE
+var trueFriends = peopleIknow.filter(function(val, i, arr){
+  return value.friend;
+});
 var peopleIknow = [
   { name: "Steve", friend: true },
   { name: "Dan", friend: false },
@@ -110,3 +120,7 @@ var peopleIknow = [
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+var indexes = [0,1,2,3,4,5,6,7]
+function indexFinder(){
+  return index.forEach(randomNumbers[1, 3453, 34, 456, 32, 3, 2, 0]);
+}
